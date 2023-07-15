@@ -4,7 +4,7 @@ const cors = require('cors');
 require("../../crimeLogin/server/config/mongoose.config");
 const cookieParser = require('cookie-parser')
 require('dotenv').config();
-require('./routes/crime.routes')(app);  
+require('./routes/crime.routes')(app);
 
 app.use(express.json(), express.urlencoded({ extended: true }));
 
